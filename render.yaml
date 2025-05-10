@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: vk-chat-bot
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: VK_CONFIRMATION_TOKEN
+        value: your_vk_token
+      - key: VK_SECRET
+        value: your_vk_secret
